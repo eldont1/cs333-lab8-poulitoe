@@ -224,6 +224,7 @@ and inside `function App() {`, above the `return`, add:
 ```
 
 Question 4: what does the Console show? What is `contacts`, and what is each thing inside it?
+- The console shows the components on the page that were hardcoded in App.jsx, as well as the data from the contacts.js file we just made. It's an array of objects, each containing some contact information.
 
 10. Now replace your three `<Contact ... />` tags in `App.jsx` with these, which read from `contacts`:
 
@@ -251,6 +252,7 @@ Question 4: what does the Console show? What is `contacts`, and what is each thi
 The page should look the same. But now all your data lives in `contacts.js`.
 
 Question 5: why `0`, `1` and `2`? What would you have to do if you had 100 contacts?
+- 0, 1, and 2 are the indicies of the contacts array. If we had 100, we'd either have to hardcode each one, or find a faster way to do it, like with mapping.
 
 Commit: `Part 3: data in contacts.js`
 

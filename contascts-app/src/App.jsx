@@ -1,13 +1,30 @@
 import "./App.css";
 import Contact from "./Contact.jsx";
+import contacts from "./contacts.js";
 
 function App() {
+  console.log(contacts);
   return (
     <div>
       <h1>My Contacts</h1>
-      <Contact name="Luke Kennard" phoneNumber="541-555-0101" email="lukekennard@example.com" avatar="https://i.pravatar.cc/150?img=4" />
-      <Contact name="Gopher Thompson" phoneNumber="513-623-0054" email="gophert@example.com" avatar="https://i.pravatar.cc/150?img=3" />
-      <Contact name="Bob Cobson" phoneNumber="672-011-8891" email="bobbycobby@example.com" avatar="https://i.pravatar.cc/150?img=1" />
+      <Contact
+        name={contacts[0].name}
+        phoneNumber={contacts[0].phoneNumber}
+        email={contacts[0].email}
+        avatar={contacts[0].avatar}
+      />
+      <Contact
+        name={contacts[1].name}
+        phoneNumber={contacts[1].phoneNumber}
+        email={contacts[1].email}
+        avatar={contacts[1].avatar}
+      />
+      <Contact
+        name={contacts[2].name}
+        phoneNumber={contacts[2].phoneNumber}
+        email={contacts[2].email}
+        avatar={contacts[2].avatar}
+      />
     </div>
   );
 }
