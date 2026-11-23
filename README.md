@@ -110,6 +110,7 @@ and under the `<h1>` line, add three of them:
 ```
 
 Question 1: what do you see? Why are all three the same?
+- Three contacts under the list, all Ada Lovelace. They're the same because the Contact function only ever returns the same entry.
 
 6. Props. A prop is a value you hand to a component, written like an HTML attribute. Change `Contact.jsx` to this:
 
@@ -141,6 +142,7 @@ TODO: change the names and phone numbers to people you make up (or your favorite
 Look in the Console. (You might see each line twice. That's React double-checking your code while you develop, it's normal and it doesn't happen on your server.)
 
 Question 2: what does `console.log(props)` print? What kind of thing is `props`?
+- The log prints out the object, so the name and the phone number. Props is short for properties, and are read-only inputs passed from a parent component to a child component to customize its output and make it reusable.
 
 7. Two more props. Add `email` and `avatar` to each `<Contact />` in `App.jsx`, for example:
 
@@ -170,6 +172,7 @@ and this one under the phone line:
 ```
 
 Question 3: the `Contact` component is written once. How does it show three different people?
+- Because it uses the props as a sort of fill-in-the-blank to add whatever we put into App.jsx.
 
 Commit: `Part 2: props`
 
