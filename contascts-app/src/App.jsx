@@ -1,7 +1,9 @@
 import "./App.css";
 import Contact from "./Contact.jsx";
 import contacts from "./contacts.js";
+import Avatar from "./Avatar.jsx";
 
+// Create a contact block
 function createContact(contact) {
   return (
     <Contact
@@ -14,6 +16,7 @@ function createContact(contact) {
   );
 }
 
+// Build the page -- map and create the contacts, and log.
 function App() {
   const names = contacts.map(function (contact) {
     return contact.name;

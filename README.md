@@ -394,6 +394,7 @@ The page should look the same. `App` uses `Contact`, and now `Contact` uses `Ava
 16. A contact with no email. In `contacts.js`, delete the whole `email: ...` line from one of your contacts. Save and look at that contact.
 
 Question 9: what does that contact show for Email? Why?
+- The contact shows nothing -- it's blank. The code still tries to map it, but doesn't find anything, so prints what's in Contact.jsx, with no email.
 
 Fix it in `Contact.jsx` by changing the email line to this:
 
